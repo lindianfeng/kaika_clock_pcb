@@ -763,7 +763,7 @@ U 1 1 5FEE5D4D
 P 3400 4800
 F 0 "SW2" H 3600 5050 50  0000 C CNN
 F 1 "SW-1101-B-W" H 3650 4950 50  0001 C CNN
-F 2 "Kaka-footprints:KEY-SMD_2P-L6.0-W3.6-P7.4-LS8.0-L" H 3370 5540 50  0001 C CNN
+F 2 "Kaka-footprints:SW-SMD_L6.2-W3.6-LS8.0" H 3370 5540 50  0001 C CNN
 F 3 "" H 3370 5540 50  0001 C CNN
 	1    3400 4800
 	1    0    0    -1  
@@ -1338,9 +1338,9 @@ F 3 "" H 7800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 1200 7800 1350
+	7800 1200 7800 1250
 Wire Wire Line
-	7800 1550 7800 1700
+	7800 1550 7800 1600
 Text GLabel 1350 6950 0    50   Input ~ 0
 BEEP
 Text GLabel 7500 3000 0    50   Input ~ 0
@@ -1429,4 +1429,29 @@ Wire Wire Line
 Connection ~ 8350 3250
 Wire Wire Line
 	8350 3250 8350 3300
+Wire Wire Line
+	7800 1250 7500 1250
+Connection ~ 7800 1250
+Wire Wire Line
+	7800 1250 7800 1350
+Wire Wire Line
+	7500 1600 7800 1600
+Connection ~ 7800 1600
+Wire Wire Line
+	7800 1600 7800 1700
+$Comp
+L Device:C_Small C18
+U 1 1 5FEF76A0
+P 7500 1450
+F 0 "C18" H 7592 1496 50  0000 L CNN
+F 1 "10uf" H 7592 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 7500 1450 50  0001 C CNN
+F 3 "~" H 7500 1450 50  0001 C CNN
+	1    7500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1250 7500 1350
+Wire Wire Line
+	7500 1600 7500 1550
 $EndSCHEMATC
