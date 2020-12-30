@@ -10,7 +10,7 @@ Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "V2.2"
 Comment4 "Author:kaka"
 $EndDescr
 $Comp
@@ -1100,7 +1100,7 @@ F 3 "" H 9700 1750 50  0001 C CNN
 	1    9700 1750
 	-1   0    0    1   
 $EndComp
-Text GLabel 1350 6650 0    50   Input ~ 0
+Text GLabel 1350 6750 0    50   Input ~ 0
 RUN_LED
 Text GLabel 8050 5500 0    50   Input ~ 0
 RUN_LED
