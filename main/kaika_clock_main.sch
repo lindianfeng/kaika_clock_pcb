@@ -930,7 +930,7 @@ Wire Wire Line
 Wire Notes Line
 	750  1800 3850 1800
 Wire Notes Line
-	10850 2350 4850 2350
+	10850 2200 4850 2200
 $Comp
 L Device:C_Small C9
 U 1 1 5FF01274
@@ -1497,8 +1497,6 @@ F 3 "" H 9450 1850 50  0001 C CNN
 	1    9450 1200
 	1    0    0    -1  
 $EndComp
-Text GLabel 9150 1000 0    50   Input ~ 0
-USB_D+
 $Comp
 L power:VCC #PWR0101
 U 1 1 5FFB7E14
@@ -1543,12 +1541,6 @@ F 3 "" H 8850 1800 50  0001 C CNN
 	1    8850 1800
 	0    1    1    0   
 $EndComp
-Text GLabel 9150 1500 0    50   Input ~ 0
-USB_D-
-Text GLabel 9150 1400 0    50   Input ~ 0
-USB_D+
-Text GLabel 9150 1100 0    50   Input ~ 0
-USB_D-
 Wire Wire Line
 	9350 1900 9350 2000
 Connection ~ 9350 2000
@@ -1575,14 +1567,6 @@ Wire Wire Line
 	8850 1800 9350 1800
 Wire Wire Line
 	8850 700  9350 700 
-Wire Wire Line
-	9150 1000 9350 1000
-Wire Wire Line
-	9150 1100 9350 1100
-Wire Wire Line
-	9150 1400 9350 1400
-Wire Wire Line
-	9150 1500 9350 1500
 Wire Wire Line
 	8600 1700 9350 1700
 Wire Wire Line
@@ -1634,9 +1618,86 @@ $EndComp
 Wire Wire Line
 	9350 900  9000 900 
 Wire Wire Line
-	9350 1300 9000 1300
-Wire Wire Line
 	8700 900  8800 900 
 Wire Wire Line
 	8800 1300 8700 1300
+$Comp
+L Device:R_Small R17
+U 1 1 5FF31866
+P 8800 1050
+F 0 "R17" V 8750 800 50  0000 L CNN
+F 1 "1.5K" V 8750 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8800 1050 50  0001 C CNN
+F 3 "~" H 8800 1050 50  0001 C CNN
+	1    8800 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5FF32DD9
+P 8200 1050
+F 0 "#PWR0108" H 8200 900 50  0001 C CNN
+F 1 "+3.3V" H 8100 1200 50  0000 L CNN
+F 2 "" H 8200 1050 50  0001 C CNN
+F 3 "" H 8200 1050 50  0001 C CNN
+	1    8200 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 1050 8900 1050
+Wire Wire Line
+	8700 1050 8200 1050
+$Comp
+L Device:R_Small R18
+U 1 1 5FF5C041
+P 8900 1500
+F 0 "R18" V 9000 1350 50  0000 L CNN
+F 1 "33" V 9000 1500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8900 1500 50  0001 C CNN
+F 3 "~" H 8900 1500 50  0001 C CNN
+	1    8900 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 5FF69081
+P 8950 1000
+F 0 "R19" V 9050 850 50  0000 L CNN
+F 1 "33" V 9050 1000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8950 1000 50  0001 C CNN
+F 3 "~" H 8950 1000 50  0001 C CNN
+	1    8950 1000
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 1000 0    50   Input ~ 0
+USB_D+
+Text GLabel 8550 1500 0    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	9350 1300 9000 1300
+Wire Wire Line
+	9200 1000 9200 1050
+Wire Wire Line
+	9200 1400 9350 1400
+Wire Wire Line
+	9350 1100 9100 1100
+Wire Wire Line
+	9100 1100 9100 1500
+Wire Wire Line
+	9100 1500 9350 1500
+Wire Wire Line
+	9200 1000 9350 1000
+Wire Wire Line
+	9050 1000 9200 1000
+Connection ~ 9200 1000
+Wire Wire Line
+	8550 1000 8850 1000
+Wire Wire Line
+	8550 1500 8800 1500
+Wire Wire Line
+	9000 1500 9100 1500
+Connection ~ 9100 1500
+Connection ~ 9200 1050
+Wire Wire Line
+	9200 1050 9200 1400
 $EndSCHEMATC
