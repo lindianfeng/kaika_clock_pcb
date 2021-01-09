@@ -593,12 +593,12 @@ $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5FE1237B
-P 5250 5300
-F 0 "#PWR017" H 5250 5050 50  0001 C CNN
-F 1 "GND" H 5255 5127 50  0000 C CNN
-F 2 "" H 5250 5300 50  0001 C CNN
-F 3 "" H 5250 5300 50  0001 C CNN
-	1    5250 5300
+P 4950 5300
+F 0 "#PWR017" H 4950 5050 50  0001 C CNN
+F 1 "GND" H 4955 5127 50  0000 C CNN
+F 2 "" H 4950 5300 50  0001 C CNN
+F 3 "" H 4950 5300 50  0001 C CNN
+	1    4950 5300
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -974,17 +974,6 @@ Wire Wire Line
 	3450 3150 3450 3100
 Connection ~ 3000 3150
 $Comp
-L Device:C_Small C15
-U 1 1 5FEE4017
-P 5400 5550
-F 0 "C15" H 5492 5596 50  0000 L CNN
-F 1 "100nf" H 5492 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5400 5550 50  0001 C CNN
-F 3 "~" H 5400 5550 50  0001 C CNN
-	1    5400 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VCC #PWR016
 U 1 1 5FEAD736
 P 5250 1100
@@ -1151,12 +1140,12 @@ Wire Wire Line
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5FED24A9
-P 5350 5300
-F 0 "BT1" V 5200 5400 50  0000 C CNN
-F 1 "Battery_Cell" V 5400 4800 50  0001 C CNN
-F 2 "Kaka-footprints:BAT-SMD_CR2032-3V" V 5350 5360 50  0001 C CNN
-F 3 "~" V 5350 5360 50  0001 C CNN
-	1    5350 5300
+P 5200 5300
+F 0 "BT1" V 5050 5400 50  0000 C CNN
+F 1 "Battery_Cell" V 5250 4800 50  0001 C CNN
+F 2 "Kaka-footprints:BAT-TH_BS-2-1" V 5200 5360 50  0001 C CNN
+F 3 "~" V 5200 5360 50  0001 C CNN
+	1    5200 5300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1207,34 +1196,6 @@ Wire Wire Line
 	5850 5500 5850 5650
 Wire Wire Line
 	6150 5650 5950 5650
-Wire Wire Line
-	5250 5300 5250 5550
-Wire Wire Line
-	5250 5550 5300 5550
-Connection ~ 5250 5300
-Wire Wire Line
-	6150 5300 6150 5650
-Wire Wire Line
-	6150 5150 6150 5300
-Connection ~ 6150 5300
-$Comp
-L Diode:BAT54C D2
-U 1 1 600512F5
-P 5850 5300
-F 0 "D2" H 5850 5525 50  0000 C CNN
-F 1 "BAT54C" H 5850 5434 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5925 5425 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 5770 5300 50  0001 C CNN
-	1    5850 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 5300 5550 5300
-Connection ~ 5550 5300
-Wire Wire Line
-	5550 5300 5550 5550
-Wire Wire Line
-	5550 5550 5500 5550
 $Comp
 L Kaka:DHT11_OR_22 U4
 U 1 1 601132F3
@@ -1704,4 +1665,24 @@ Wire Wire Line
 	3700 5950 3800 5950
 Wire Wire Line
 	4000 5950 4100 5950
+Wire Wire Line
+	4950 5300 5100 5300
+$Comp
+L Diode:BAT54C D2
+U 1 1 600512F5
+P 5850 5300
+F 0 "D2" H 5850 5525 50  0000 C CNN
+F 1 "BAT54C" H 5850 5434 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5925 5425 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 5770 5300 50  0001 C CNN
+	1    5850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5150 6150 5300
+Connection ~ 6150 5300
+Wire Wire Line
+	6150 5300 6150 5650
+Wire Wire Line
+	5400 5300 5550 5300
 $EndSCHEMATC
