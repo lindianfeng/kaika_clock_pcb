@@ -29,8 +29,6 @@ Wire Wire Line
 Wire Wire Line
 	990  3410 990  3460
 Wire Wire Line
-	1390 3410 1390 3460
-Wire Wire Line
 	1790 3410 1790 3460
 Connection ~ 1790 3460
 Wire Wire Line
@@ -70,13 +68,6 @@ F 3 "~" H 7550 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 990  3160
-Wire Wire Line
-	1390 3160 990  3160
-Connection ~ 1390 3160
-Wire Wire Line
-	1390 3210 1390 3160
-Wire Wire Line
-	1790 3160 1390 3160
 Connection ~ 1790 3160
 Wire Wire Line
 	1790 3210 1790 3160
@@ -105,7 +96,7 @@ U 1 1 5FE5D3EC
 P 7400 1850
 F 0 "J1" H 7480 1842 50  0000 L CNN
 F 1 "Conn_01x04" H 7480 1751 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7400 1850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 7400 1850 50  0001 C CNN
 F 3 "~" H 7400 1850 50  0001 C CNN
 	1    7400 1850
 	1    0    0    -1  
@@ -783,7 +774,7 @@ U 1 1 5FED24A9
 P 5200 5300
 F 0 "BT1" V 5050 5400 50  0000 C CNN
 F 1 "Battery_Cell" V 5250 4800 50  0001 C CNN
-F 2 "Kaka:BAT-TH_BS-2-1" V 5200 5360 50  0001 C CNN
+F 2 "Kaka-footprints:BAT-TH_BS-2-1" V 5200 5360 50  0001 C CNN
 F 3 "~" V 5200 5360 50  0001 C CNN
 	1    5200 5300
 	0    1    1    0   
@@ -1523,7 +1514,7 @@ U 1 1 6014B845
 P 9600 1300
 F 0 "P1" H 9928 1246 50  0000 L CNN
 F 1 "USB-C-SMD_TYPE-C16PIN_C168688" H 8740 270 50  0000 L CNN
-F 2 "Kaka:USB-C-SMD_TYPE-C-USB-4_C168688" H 9600 1950 50  0001 C CNN
+F 2 "Kaka-footprints:USB-C-SMD_TYPE-C-USB-4_C168688" H 9600 1950 50  0001 C CNN
 F 3 "" H 9600 1950 50  0001 C CNN
 	1    9600 1300
 	1    0    0    -1  
@@ -1567,7 +1558,7 @@ LDO
 Text GLabel 2650 5650 2    50   Input ~ 0
 KEY3
 Wire Wire Line
-	990  3460 1790 3460
+	990  3460 1400 3460
 Wire Wire Line
 	1000 1100 1300 1100
 $Comp
@@ -1645,4 +1636,27 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    2050 5650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 600E0838
+P 1400 3300
+F 0 "C2" H 1492 3346 50  0000 L CNN
+F 1 "100nf" H 1492 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1400 3300 50  0001 C CNN
+F 3 "~" H 1400 3300 50  0001 C CNN
+	1    1400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	990  3160 1400 3160
+Wire Wire Line
+	1400 3200 1400 3160
+Connection ~ 1400 3160
+Wire Wire Line
+	1400 3160 1790 3160
+Wire Wire Line
+	1400 3400 1400 3460
+Connection ~ 1400 3460
+Wire Wire Line
+	1400 3460 1790 3460
 $EndSCHEMATC
