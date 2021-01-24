@@ -1,4 +1,4 @@
-update=2021/1/22 14:44:04
+update=2021/1/24 2:29:57
 version=1
 last_client=kicad
 [general]
@@ -51,8 +51,8 @@ TrackWidth10=0.9
 TrackWidth11=1
 TrackWidth12=1.5
 TrackWidth13=2
-ViaDiameter1=0.8
-ViaDrill1=0.4
+ViaDiameter1=0.7
+ViaDrill1=0.35
 ViaDiameter2=0.6
 ViaDrill2=0.3
 ViaDiameter3=0.7
@@ -264,6 +264,17 @@ Enabled=0
 Name=Default
 Clearance=0.2
 TrackWidth=0.25
+ViaDiameter=0.7
+ViaDrill=0.35
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.3
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=+3V3
+Clearance=0.2
+TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -271,7 +282,7 @@ uViaDrill=0.1
 dPairWidth=0.3
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/1]
+[pcbnew/Netclasses/2]
 Name=Vcc
 Clearance=0.2
 TrackWidth=0.5
