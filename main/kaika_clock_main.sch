@@ -280,17 +280,6 @@ F 3 "" H 6250 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Timer_RTC:DS3231MZ U3
-U 1 1 5FE096DF
-P 9550 5200
-F 0 "U3" H 9250 5200 50  0000 C CNN
-F 1 "DS3231MZ" H 9550 5200 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 4700 50  0001 C CNN
-F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 9550 4600 50  0001 C CNN
-	1    9550 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR024
 U 1 1 5FE0C8E2
 P 9550 5600
@@ -1539,8 +1528,6 @@ Wire Wire Line
 Text GLabel 2350 5900 2    50   Input ~ 0
 KEY3
 NoConn ~ 2350 7200
-NoConn ~ 2350 6600
-NoConn ~ 2350 6500
 NoConn ~ 2350 6300
 NoConn ~ 2350 6100
 NoConn ~ 1050 7100
@@ -1754,4 +1741,17 @@ Text Notes 3900 7750 0    190  ~ 0
 LED
 Text Notes 500  3900 0    190  ~ 0
 FILTER 
+$Comp
+L Timer_RTC:DS3231MZ U3
+U 1 1 5FE096DF
+P 9550 5200
+F 0 "U3" H 9250 5200 50  0000 C CNN
+F 1 "DS3231MZ" H 9550 5200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 4700 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 9550 4600 50  0001 C CNN
+	1    9550 5200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2350 6500
+NoConn ~ 2350 6600
 $EndSCHEMATC
